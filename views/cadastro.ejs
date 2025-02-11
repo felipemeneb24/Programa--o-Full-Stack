@@ -1,0 +1,12 @@
+<h1>Cadastrar Carro</h1>
+
+<form method="POST" action="/cadastro">
+    <label>Nome do Veiculo</label>
+    <input type="text" name="carro" id="carro">
+    <br>
+    <button type="submit">Gravar</button>
+    <br>
+    <% if(typeof retorno != 'undefined'){ %>
+        <span><%= retorno %></span>
+    <% } %>
+</form>
